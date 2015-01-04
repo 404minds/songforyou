@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	background: #ffc837; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffc837 0%, #ff8008 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc837), color-stop(100%,#ff8008)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffc837 0%,#ff8008 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffc837 0%,#ff8008 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffc837 0%,#ff8008 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffc837 0%,#ff8008 100%); /* W3C */
+}
+
+/* CSS Hacks */
+.collapsing-margin-fix {
+	width: 100%;
+	height: 1px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Utility Classes */
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'drawing_with_markers';
+    src: url('../fonts/drawing_with_markers-webfont.eot');
+    src: url('../fonts/drawing_with_markers-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/drawing_with_markers-webfont.woff2') format('woff2'),
+         url('../fonts/drawing_with_markers-webfont.woff') format('woff'),
+         url('../fonts/drawing_with_markers-webfont.ttf') format('truetype'),
+         url('../fonts/drawing_with_markers-webfont.svg#drawing_with_markersregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 50px 0;
+	background: url(../images/bg-overlay.png);
+}
+
+.paper {
+	width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+	background: #ffffff;
+	-webkit-box-shadow: 0 0 16px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 16px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 0 16px 3px rgba(0,0,0,0.2);
+}
+
+.message-box {
+	border: 1px solid #bfbfbf;
+}
+
+	.message-box .message-title {
+		border-bottom: 1px solid #bfbfbf;
+		font-size: 18px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+		.message-box .message-title span {
+			font-weight: 400;
+		}
+
+	.message-box .message-content {
+		font-size: 14px;
+		line-height: 24px;
+		padding: 30px 10px;
+		font-family: drawing_with_markers;
+	}
+
+	.message-box .message-footer {
+		background: #ffc837;
+		font-size: 18px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+		.message-box .message-footer span {
+			font-weight: 400;
+		}
+.buttons-set {
+	margin-top: 50px;	
+}
+
+/* Colors */
+.white {
+	background-color: #ffffff;
+	color: #696969;
+}
+
+.blue {
+	background-color: #2999f3;
+	color: #ffffff;
+}
+
+button, .button {
+	font-size: 18px;
+	line-height: 24px;
+	border: 0;
+	border-radius: 3px;
+	padding: 15px 50px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+	a.button {
+		text-decoration: none;
+	}
+
+	button img,
+	.button img {
+		position: relative;
+		top: 3px;
+		margin-left: 10px;
+	}
+
+/* Music Player */
+.music-player {
+	border: 1px solid #bfbfbf;
+	margin-top: 60px;
+}
+
+.music-player .player-header {
+	border-bottom: 1px solid #bfbfbf;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 40px;
+	color: #bfbfbf;
+	text-align: center;
+}
+
+.music-player .player-score {
+	padding: 20px;
+}
+
+.player-score .song-title {
+	color: #696969;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.player-score .song-author {
+	color: #929292;
+	font-size: 8px;
+	font-weight: 500;
+}
+
+.player-score .song-singer {
+	color: #8e8e8e;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.player-score .song-duration {
+	color: #696969;
+	font-size: 10px;
+	font-weight: 500;
+	margin: 20px 0 6px 0;
+}
+
+.music-player .player-progress {
+	position: relative;
+	background: rgba(41, 153, 243, 0.60);
+	height: 3px;
+}
+
+.music-player .player-progress .current {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	background: rgba(41, 153, 243, 1);
+	height: 3px;
+	width: 40%;
+}
+
+.music-player .player-controls {
+	padding: 20px;
+	background-color: #bfbfbf;	
+}
+
+	.music-player .player-controls .control-block img:nth-of-type(n+1) {
+		margin-left: 20px;
+	}
