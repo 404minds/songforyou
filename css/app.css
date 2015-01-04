@@ -210,6 +210,10 @@ button, .button {
 	background-color: #bfbfbf;	
 }
 
+	.music-player .player-controls img {
+		cursor: pointer;
+	}
+
 	.music-player .player-controls .control-block img:nth-of-type(n+1) {
 		margin-left: 20px;
 	}
