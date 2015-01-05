@@ -17,6 +17,7 @@ body {
 	background: -o-linear-gradient(top, #ffc837 0%,#ff8008 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #ffc837 0%,#ff8008 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffc837 0%,#ff8008 100%); /* W3C */
+	background-attachment: fixed;
 }
 
 /* CSS Hacks */
