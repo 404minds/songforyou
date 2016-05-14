@@ -11,7 +11,7 @@ var routes = require('./routes')(app);
 
 
 // create PORT
-var port = process.env.PORT || 3011;
+var port = process.env.PORT || 3055;
 var server = app.listen(port, function () {
   var dPort = server.address().port;
   console.log("SongForYou is running on port: ", dPort);
