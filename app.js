@@ -7,8 +7,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // Create routes
-var routes = require('./routes')(app);
-
+var routes = require('./router')(app);
 
 // create PORT
 var port = process.env.PORT || 3055;
