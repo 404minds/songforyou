@@ -1,12 +1,13 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var config = require('./../../config/config');
 
 router.get('/', function(req, res) {
   var qs = {
     q: req.query.q,
     part: 'id,snippet',
-    key: 'AIzaSyAnTwU5QdvU9ZaSv-eNUc5LHQG5BBKcWJ0',
+    key: config.youtube.apiKey,
     order: 'relevance',
   };
 
